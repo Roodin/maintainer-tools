@@ -13,7 +13,12 @@ section.
 ## Modules
 
 * Prefer the use of the singular form in module name (or use "multi")
-* Use the [description template](https://github.com/OCA/maintainer-tools/tree/master/template/module)
+* Use the [description template](https://github.com/OCA/maintainer-tools/tree/master/template/module) but remove sections with no meaningful content.
+* In the `__openerp__.py`  manifest file:
+  * Avoid empty keys
+  * Make sure it has the `license` key
+  * Make sure the `author` key has appended the text `,Odoo Community Association (OCA)`
+  * Remove empty keys
 
 ### Directories
 
